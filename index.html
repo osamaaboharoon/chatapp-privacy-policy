@@ -5,29 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy – ChatApp</title>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; background-color:#f9f9f9;}
-    h1 { color:#1a73e8; }
-    h2 { margin-top:20px; color:#333; }
-    a  { color:#1a73e8; text-decoration:none;}
+    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; background-color: #f9f9f9; }
+    h1 { color: #1a73e8; }
+    h2 { margin-top: 20px; color: #333; }
+    a { color: #1a73e8; text-decoration: none; }
   </style>
 </head>
 <body>
 
   <h1>Privacy Policy for ChatApp</h1>
-  <p><strong>Last updated:</strong> 12 June 2025</p>
+  <p><strong>Last updated:</strong> 12 June 2025</p>
 
-  <p>ChatApp is a chat application developed by Osama Farrag (<a href="mailto:o.haroon111@gmail.com">o.haroon111@gmail.com</a> / 01154060470). We respect your privacy and are committed to protecting your personal data.</p>
+  <p>
+    ChatApp is a chat application developed by Osama Farrag (<a href="mailto:o.haroon111@gmail.com">o.haroon111@gmail.com</a> / 01154060470). 
+    We respect your privacy and are committed to protecting your personal data.
+  </p>
 
   <h2>1. Data Collection</h2>
-  <p>We collect and store the email addresses and display names used for login via Firebase Authentication. No other personal data is collected or stored locally on the device.</p>
+  <p>
+    We collect and store the email addresses and display names used for login via Firebase Authentication. 
+    We also collect the device’s Firebase Cloud Messaging (FCM) token to enable push notifications.
+  </p>
 
   <h2>2. Data Usage</h2>
-  <p>Collected data is used solely for enabling user login, identifying chat participants, and managing messages using Firebase. We do not sell, share, or expose your data to third parties.</p>
+  <p>
+    Collected data is used solely for enabling user login, identifying chat participants, managing messages using Firebase, 
+    and sending push notifications using FCM. 
+    Notifications are delivered securely through a self-hosted backend (Railway) using FCM.
+    We do not sell, share, or expose your data to third parties.
+  </p>
 
   <h2>3. Data Deletion</h2>
-  <p>Users can request account deletion at any time. Deleting an account permanently removes all profile information and associated chat messages from Firebase.</p>
+  <p>
+    Users can request account deletion at any time. 
+    Deleting an account permanently removes all profile information and associated chat messages from Firebase.
+  </p>
 
-  <!-- ⭐ NEW SECTION ADDED FOR GOOGLE PLAY -->
   <h2>4. How to Delete Your Account or Data</h2>
   <p>To request deletion of your entire account <em>or</em> specific chat data:</p>
   <ol>
@@ -35,23 +48,40 @@
     <li>Include the email address you used to register in the app.</li>
     <li>Specify whether you want to delete the whole account or just selected chat history.</li>
   </ol>
-  <p>Once verified, your requested data will be permanently removed from our servers within <strong>7&nbsp;business&nbsp;days</strong>.</p>
-  <!-- ⭐ END NEW SECTION -->
-
-  <h2>5. Account Logout</h2>
-  <p>Users can log out of the application at any time, which ends their session locally on the device.</p>
-
-  <h2>6. Third‑Party Services</h2>
-  <p>This app uses Firebase services (Authentication, Firestore). Firebase’s privacy policy is available at <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a>.</p>
-
-  <h2>7. Contact Us</h2>
-  <p>If you have any questions about this policy or your data, contact us at:<br>
-     Email: <a href="mailto:o.haroon111@gmail.com">o.haroon111@gmail.com</a><br>
-     Phone: +20&nbsp;1154060470
+  <p>
+    Once verified, your requested data will be permanently removed from our servers within <strong>7 business days</strong>.
   </p>
 
-  <p>By using ChatApp, you agree to this privacy policy.</p>
+  <h2>5. Account Logout</h2>
+  <p>
+    Users can log out of the application at any time, which ends their session locally on the device.
+  </p>
+
+  <h2>6. Third‑Party Services</h2>
+  <p>
+    This app uses Firebase services (Authentication, Firestore). Firebase’s privacy policy is available at 
+    <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a>.
+  </p>
+
+  <h2>6.1 Push Notifications & Backend Server</h2>
+  <p>
+    ChatApp uses Firebase Cloud Messaging (FCM) to deliver push notifications about new messages. 
+    Your FCM token is stored securely in our Firebase Firestore database and used solely for notification delivery. 
+    We use a secure external backend server hosted on <a href="https://railway.app/" target="_blank">Railway</a> 
+    to trigger and send these notifications via Firebase.
+  </p>
+
+  <h2>7. Contact Us</h2>
+  <p>
+    If you have any questions about this policy or your data, contact us at:<br>
+    Email: <a href="mailto:o.haroon111@gmail.com">o.haroon111@gmail.com</a><br>
+    Phone: +20 1154060470
+  </p>
+
+  <p>
+    By using ChatApp, you agree to this privacy policy. This policy may be updated periodically to reflect changes in features or regulations. 
+    Please check this page regularly for updates.
+  </p>
+
 </body>
 </html>
-
-
